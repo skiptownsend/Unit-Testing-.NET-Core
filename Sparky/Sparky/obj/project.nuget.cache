@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lzwYhN9PBuzHcWjAaxoIFUDp4jEDAPE86VDsB2juVp7/EAqFp2AS7+xiutT7HbREb9qWbfpSp87IPZ39CqzCbw==",
+  "dgSpecHash": "Dkuj5Uq09d8ZuVUpJ+D7YtaC8y8yg8jh9E70wryyRxlqdrvUR7dEgX7mIOEU8haSQ6v2LzU63Eh9OrEEYM/oKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core NUnit XUnit\\Sparky\\Sparky\\Sparky.csproj",
+  "projectFilePath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\Sparky\\Sparky.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

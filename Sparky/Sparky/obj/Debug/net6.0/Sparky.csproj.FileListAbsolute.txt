@@ -10,3 +10,15 @@ C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core NUnit XUnit\Spar
 C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core NUnit XUnit\Sparky\Sparky\obj\Debug\net6.0\refint\Sparky.dll
 C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core NUnit XUnit\Sparky\Sparky\obj\Debug\net6.0\Sparky.pdb
 C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core NUnit XUnit\Sparky\Sparky\obj\Debug\net6.0\ref\Sparky.dll
+C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\Sparky\bin\Debug\net6.0\Sparky.deps.json
+C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\Sparky\bin\Debug\net6.0\Sparky.dll
+C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\Sparky\bin\Debug\net6.0\Sparky.pdb
+C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\Sparky\obj\Debug\net6.0\Sparky.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\Sparky\obj\Debug\net6.0\Sparky.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\Sparky\obj\Debug\net6.0\Sparky.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\Sparky\obj\Debug\net6.0\Sparky.AssemblyInfo.cs
+C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\Sparky\obj\Debug\net6.0\Sparky.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\Sparky\obj\Debug\net6.0\Sparky.dll
+C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\Sparky\obj\Debug\net6.0\refint\Sparky.dll
+C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\Sparky\obj\Debug\net6.0\Sparky.pdb
+C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\Sparky\obj\Debug\net6.0\ref\Sparky.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w7ObmrLevkTByuxbcpmSTGPo5VYz2Di0ZpaJoE5k8TsyzE2pAJbIETxBnH3IjYCioKtSbBIjNKrMGO7jMARYHw==",
+  "dgSpecHash": "K8lCJCasraObfHxNQOXIznB6t3EnH8mgbfk+mGnfytPw4PQ7nvtDT4pUVK+s7dkt4Jhe5ckw4oHTg8BvKqNLPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core NUnit XUnit\\Sparky\\SparkyNUnitTest\\SparkyNUnitTest.csproj",
+  "projectFilePath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\SparkyNUnitTest\\SparkyNUnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.codecoverage\\17.4.0\\microsoft.codecoverage.17.4.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.net.test.sdk\\17.4.0\\microsoft.net.test.sdk.17.4.0.nupkg.sha512",

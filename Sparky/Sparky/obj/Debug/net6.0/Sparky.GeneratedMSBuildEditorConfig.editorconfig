@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Sparky
-build_property.ProjectDir = C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core NUnit XUnit\Sparky\Sparky\
+build_property.ProjectDir = C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\Sparky\

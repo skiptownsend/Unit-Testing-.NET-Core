@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core NUnit XUnit\\Sparky\\SparkyMSTest\\SparkyMSTest.csproj": {}
+    "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\SparkyMSTest\\SparkyMSTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core NUnit XUnit\\Sparky\\SparkyMSTest\\SparkyMSTest.csproj": {
+    "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\SparkyMSTest\\SparkyMSTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core NUnit XUnit\\Sparky\\SparkyMSTest\\SparkyMSTest.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\SparkyMSTest\\SparkyMSTest.csproj",
         "projectName": "SparkyMSTest",
-        "projectPath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core NUnit XUnit\\Sparky\\SparkyMSTest\\SparkyMSTest.csproj",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\SparkyMSTest\\SparkyMSTest.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core NUnit XUnit\\Sparky\\SparkyMSTest\\obj\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\SparkyMSTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core NUnit XUnit\\Sparky\\Sparky\\Sparky.csproj": {
-                "projectPath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core NUnit XUnit\\Sparky\\Sparky\\Sparky.csproj"
+              "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\Sparky\\Sparky.csproj": {
+                "projectPath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\Sparky\\Sparky.csproj"
               }
             }
           }
@@ -87,14 +87,14 @@
         }
       }
     },
-    "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core NUnit XUnit\\Sparky\\Sparky\\Sparky.csproj": {
+    "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\Sparky\\Sparky.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core NUnit XUnit\\Sparky\\Sparky\\Sparky.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\Sparky\\Sparky.csproj",
         "projectName": "Sparky",
-        "projectPath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core NUnit XUnit\\Sparky\\Sparky\\Sparky.csproj",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\Sparky\\Sparky.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core NUnit XUnit\\Sparky\\Sparky\\obj\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\Sparky\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

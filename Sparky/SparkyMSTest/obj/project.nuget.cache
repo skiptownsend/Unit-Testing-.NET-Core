@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q2NAVIK+qGhNbu+DRGsP1xtJfGW0ch0A7lHDbxjCkT+Dg61zStaOHdWHjfDyy6uwWhgR6AuFkJC/PKHjxUIQDg==",
+  "dgSpecHash": "INIkv3KT+YcJIyVuQWpz3rfxx35DjAqedDDNj9NcLGdvZ4krgae8paI9nlElK4+uPKvmBScbykdl2ueAu5dxGg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core NUnit XUnit\\Sparky\\SparkyMSTest\\SparkyMSTest.csproj",
+  "projectFilePath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\SparkyMSTest\\SparkyMSTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.codecoverage\\17.4.0\\microsoft.codecoverage.17.4.0.nupkg.sha512",
