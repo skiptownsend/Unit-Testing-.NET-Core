@@ -58,5 +58,23 @@ namespace Sparky
 
             Assert.That(result, Is.InRange(10, 25)); //Test to confirm that the discount is only ever between 10 and 25 percent
         }
+
+        [Test]
+        public void GreetMessage_GreetedWithoutLastName_ReturnsNotNull()
+        {
+            customer.GreetAndCombineNames("ben", "");
+
+            Assert.IsNotNull(customer.GreetMessage);
+            Assert.IsFalse(string.IsNullOrEmpty(customer.GreetMessage));
+        }
+
+        [Test]
+        public void GreetChecker_EmptyFirstName_ThrowsException()
+        {
+            var exceptionDetails = Assert.Throws<ArgumentException>(() => customer.GreetAndCombineNames("", "Spark"));
+            Assert.AreEqual("Empty First Name", exceptionDetails.Message);
+            Assert.That(() => customer.GreetAndCombineNames("", "spark"),
+                Throws.ArgumentException.With.Message.EqualTo("Empty First Name"));
+        }
     }
 }
