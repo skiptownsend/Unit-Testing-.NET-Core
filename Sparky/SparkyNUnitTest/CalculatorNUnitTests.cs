@@ -24,6 +24,23 @@ namespace Sparky
         }
 
         [Test]
+        [TestCase(5.4, 10.5)] //15.9
+        [TestCase(5.43, 10.53)] //15.96
+        [TestCase(5.49, 10.59)] //16.08
+        public void AddNumbersDouble_InputTwoDouble_GetCorrectAddition(double a, double b)
+        {
+            //Arrange
+            Calculator calc = new();
+
+            //Act
+            double result = calc.AddNumbersDouble(a, b);
+
+            //Assert
+            Assert.AreEqual(15.9, result, 0.2); //The "1" signifies that all results should be +/- 0.2 of the first value (15.9) 
+            
+        }
+
+        [Test]
         [TestCase(11)]
         [TestCase(13)]
         public void IsOddChecker_InputOddNumber_ReturnTrue(int a)
@@ -51,6 +68,7 @@ namespace Sparky
             Assert.IsFalse(result);
         }
 
+        //The following format is recommended when multiple test cases have similiar logic (in this case true/false)
         [Test]
         [TestCase(10, ExpectedResult = false)]
         [TestCase(11, ExpectedResult = true)]
