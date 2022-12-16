@@ -28,12 +28,15 @@ namespace Sparky
             customer.GreetAndCombineNames("Ben", "Spark");
 
             //Assert
-            Assert.AreEqual(customer.GreetMessage, "Hello, Ben Spark");
-            Assert.That(customer.GreetMessage, Is.EqualTo("Hello, Ben Spark"));
-            Assert.That(customer.GreetMessage, Does.Contain("ben Spark").IgnoreCase);
-            Assert.That(customer.GreetMessage, Does.StartWith("Hello,"));
-            Assert.That(customer.GreetMessage, Does.EndWith("Spark"));
-            Assert.That(customer.GreetMessage, Does.Match("Hello, [A-Z]{1}[a-z]+ [A-Z]{1}[a-z]+"));
+            Assert.Multiple(() => //Assert.Multiple allows you to run an entire block of tests, even if one of them fails. Without it, if a test fails, any remaining tests will not run
+            {
+                Assert.AreEqual(customer.GreetMessage, "Hello, Ben Spark");
+                Assert.That(customer.GreetMessage, Is.EqualTo("Hello, Ben Spark"));
+                Assert.That(customer.GreetMessage, Does.Contain("ben Spark").IgnoreCase);
+                Assert.That(customer.GreetMessage, Does.StartWith("Hello,"));
+                Assert.That(customer.GreetMessage, Does.EndWith("Spark"));
+                Assert.That(customer.GreetMessage, Does.Match("Hello, [A-Z]{1}[a-z]+ [A-Z]{1}[a-z]+"));
+            });
         }
 
         [Test]
@@ -53,7 +56,7 @@ namespace Sparky
         {
             int result = customer.Discount;
 
-            Assert.That(result, Is.InRange(10, 25));
+            Assert.That(result, Is.InRange(10, 25)); //Test to confirm that the discount is only ever between 10 and 25 percent
         }
     }
 }
