@@ -7,7 +7,7 @@
             return a + b;
         }
 
-        public bool IsOddNumber (int a)
+        public bool IsOddChecker (int a)
         {
             return a % 2 != 0;
         }

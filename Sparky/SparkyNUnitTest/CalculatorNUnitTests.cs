@@ -24,29 +24,47 @@ namespace Sparky
         }
 
         [Test]
-        public void Is_Input_Odd_IsOddNumber()
+        [TestCase(11)]
+        [TestCase(13)]
+        public void IsOddChecker_InputOddNumber_ReturnTrue(int a)
         {
             //Arrange
             Calculator calc = new();
 
             //Act
-            bool result = calc.IsOddNumber(3);
+            bool result = calc.IsOddChecker(a);
 
             //Assert
             Assert.IsTrue(result);
         }
 
         [Test]
-        public void Is_Input_Even_IsOddNumber()
+        public void IsOddChecker_InputEvenNumber_ReturnFalse()
         {
             //Arrange
             Calculator calc = new();
 
             //Act
-            bool result = calc.IsOddNumber(2);
+            bool result = calc.IsOddChecker(2);
 
             //Assert
             Assert.IsFalse(result);
+        }
+
+        [Test]
+        [TestCase(10, ExpectedResult = false)]
+        [TestCase(11, ExpectedResult = true)]
+        public bool IsOddChecker_InputNumber_ReturnTrueIfOdd(int a)
+        {
+            //Arrange
+            Calculator calc = new();
+
+            //Act
+            return calc.IsOddChecker(a);
+
+            //Assert - No assert in this type of test method because the assert is done by returning a value and checking
+            //it against the Expected Results in lines 55 and 56
+
         }
     }
 }
