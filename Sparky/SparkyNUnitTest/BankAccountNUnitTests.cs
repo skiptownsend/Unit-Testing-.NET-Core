@@ -11,7 +11,6 @@ namespace Sparky
     [TestFixture]
     public class BankAccountNUnitTests
     {
-        private BankAccount bankAccount;
         [SetUp]
         //public void Setup()
         //{
@@ -19,29 +18,64 @@ namespace Sparky
         //}
         public void Setup()
         {
-            var logMock = new Mock<ILogBook>();
-            bankAccount = new(logMock.Object);
+            
+            
         }
 
         //Unit Test Using LogFaker
-        [Test]
-        public void BankDepositLogFaker_Add100_ReturnTrue()
-        {
-            BankAccount bankAccountFaker = new(new LogFaker()); //This line would typically go in Setup()
-            var result = bankAccountFaker.Deposit(100);
+        //[Test]
+        //public void BankDepositLogFaker_Add100_ReturnTrue()
+        //{
+        //    BankAccount bankAccountFaker = new(new LogFaker()); //This line would typically go in Setup()
+        //    var result = bankAccountFaker.Deposit(100);
 
-            Assert.IsTrue(result);
-            Assert.That(bankAccountFaker.GetBalance, Is.EqualTo(100));
-        }
+        //    Assert.IsTrue(result);
+        //    Assert.That(bankAccountFaker.GetBalance, Is.EqualTo(100));
+        //}
 
         //Unit Test Using Moq
         [Test]
         public void BankDeposit_Add100_ReturnTrue()
         {
+            var logMock = new Mock<ILogBook>();
+            logMock.Setup(u => u.Message(""));
+
+            BankAccount bankAccount = new(logMock.Object);
             var result = bankAccount.Deposit(100);
 
             Assert.IsTrue(result);
             Assert.That(bankAccount.GetBalance, Is.EqualTo(100));
+        }
+
+        [Test]
+        [TestCase(200,100)]
+        public void BankWithdraw_Withdraw100With200Balance_ReturnsTrue(int balance, int withdrawal)
+        {
+            var logMock = new Mock<ILogBook>();
+            logMock.Setup(u => u.LogToDb(It.IsAny<string>())).Returns(true);
+            logMock.Setup(u => u.LogBalanceAfterWithdrawal(It.Is<int>(x => x > 0))).Returns(true);
+
+            BankAccount bankAccount = new(logMock.Object);
+            bankAccount.Deposit(balance);
+            var result = bankAccount.Withdraw(withdrawal);
+
+            Assert.IsTrue(result);
+
+        }
+
+        [Test]
+        public void BankWithdraw_Withdraw300With200Balance_ReturnsFalse()
+        {
+            var logMock = new Mock<ILogBook>();
+            logMock.Setup(u => u.LogToDb(It.IsAny<string>())).Returns(false);
+            logMock.Setup(u => u.LogBalanceAfterWithdrawal(It.Is<int>(x => x < 0))).Returns(false);
+
+            BankAccount bankAccount = new(logMock.Object);
+            bankAccount.Deposit(200);
+            var result = bankAccount.Withdraw(300);
+
+            Assert.IsFalse(result);
+
         }
     }
 }
