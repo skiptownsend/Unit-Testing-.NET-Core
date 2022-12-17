@@ -113,5 +113,20 @@ namespace Sparky
             Assert.IsTrue(logMock.Object.LogWithRefObj(ref customer));
             Assert.IsFalse(logMock.Object.LogWithRefObj(ref customerNotUsed));
         }
+
+        [Test]
+        public void BankLogDummy_SetAndGetLogTypeAndSeverityMock_MockTest()
+        {
+            var logMock = new Mock<ILogBook>();
+            //logMock.Setup(u => u.LogSeverity).Returns(10);
+            //logMock.Setup(u => u.LogType).Returns("warning");
+
+            logMock.SetupAllProperties();
+            logMock.Object.LogSeverity = 10;
+            logMock.Object.LogType = "warning";
+
+            Assert.That(logMock.Object.LogSeverity, Is.EqualTo(10));
+            Assert.That(logMock.Object.LogType, Is.EqualTo("warning"));
+        }
     }
 }
