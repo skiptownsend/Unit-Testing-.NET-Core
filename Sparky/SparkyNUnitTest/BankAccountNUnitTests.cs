@@ -12,9 +12,13 @@ namespace Sparky
     {
         private BankAccount bankAccount;
         [SetUp]
+        //public void Setup()
+        //{
+        //    bankAccount = new(new LogBook()); //Because we are now testing two classes, BankAccount & LogBook, this is no longer a Unit Test, but an Integration Test
+        //}
         public void Setup()
         {
-            bankAccount = new(new LogBook());
+            bankAccount = new(new LogFaker());
         }
 
         [Test]
