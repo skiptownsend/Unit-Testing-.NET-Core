@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Moq;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,9 +19,22 @@ namespace Sparky
         //}
         public void Setup()
         {
-            bankAccount = new(new LogFaker());
+            var logMock = new Mock<ILogBook>();
+            bankAccount = new(logMock.Object);
         }
 
+        //Unit Test Using LogFaker
+        [Test]
+        public void BankDepositLogFaker_Add100_ReturnTrue()
+        {
+            BankAccount bankAccountFaker = new(new LogFaker()); //This line would typically go in Setup()
+            var result = bankAccountFaker.Deposit(100);
+
+            Assert.IsTrue(result);
+            Assert.That(bankAccountFaker.GetBalance, Is.EqualTo(100));
+        }
+
+        //Unit Test Using Moq
         [Test]
         public void BankDeposit_Add100_ReturnTrue()
         {

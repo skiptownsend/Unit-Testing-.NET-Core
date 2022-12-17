@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Dkuj5Uq09d8ZuVUpJ+D7YtaC8y8yg8jh9E70wryyRxlqdrvUR7dEgX7mIOEU8haSQ6v2LzU63Eh9OrEEYM/oKg==",
+  "dgSpecHash": "04ygFQfwvUYclliLqQNnt46tjgWkxq51TgEYhPDRCl21Myp0FQ7ri+psYn+WfiZMg6FY9d2nyUc/l81+cnJdNA==",
   "success": true,
   "projectFilePath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\Sparky\\Sparky.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\castle.core\\5.1.0\\castle.core.5.1.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\moq\\4.18.3\\moq.4.18.3.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -226,3 +226,8 @@ C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\SparkyMST
 C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\SparkyMSTest\obj\Debug\net6.0\SparkyMSTest.pdb
 C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\SparkyMSTest\obj\Debug\net6.0\SparkyMSTest.genruntimeconfig.cache
 C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\SparkyMSTest\obj\Debug\net6.0\ref\SparkyMSTest.dll
+C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\SparkyMSTest\bin\Debug\net6.0\Castle.Core.dll
+C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\SparkyMSTest\bin\Debug\net6.0\Moq.dll
+C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\SparkyMSTest\bin\Debug\net6.0\System.Diagnostics.EventLog.dll
+C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\SparkyMSTest\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\admin\source\repos\Tutorials\Unit Testing in .NET Core\Sparky\SparkyMSTest\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
