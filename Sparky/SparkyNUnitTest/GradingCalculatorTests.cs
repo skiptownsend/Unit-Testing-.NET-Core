@@ -90,5 +90,50 @@ namespace Sparky
             //Assert
             Assert.That(grade, Is.EqualTo("F"));
         }
+
+        //My Result for Assignment 2, Part 2
+        [Test]
+        [TestCase(95,90,"A")]
+        [TestCase(85,90,"B")]
+        [TestCase(65,90,"C")]
+        [TestCase(95,65,"B")]
+        [TestCase(95,55,"F")]
+        [TestCase(65,55,"F")]
+        [TestCase(50,90,"F")]
+        public void GetGrade_InputScoreAndAttendance_ResultGrade(int score, int attendance, string grade)
+        {
+            //Arrange
+            gradingCalculator.Score = score;
+            gradingCalculator.AttendancePercentage = attendance;
+
+            //Act
+            var result = gradingCalculator.GetGrade();
+
+            //Assert
+            Assert.That(result, Is.EqualTo(grade));
+        }
+
+        //Bhrugen's Result for Assignment 2, Part 2
+        [Test]
+        [TestCase(95, 90, ExpectedResult = "A")]
+        [TestCase(85, 90, ExpectedResult = "B")]
+        [TestCase(65, 90, ExpectedResult = "C")]
+        [TestCase(95, 65, ExpectedResult = "B")]
+        [TestCase(95, 55, ExpectedResult = "F")]
+        [TestCase(65, 55, ExpectedResult = "F")]
+        [TestCase(50, 90, ExpectedResult = "F")]
+        public string GetGrade_AllGradeLogicalScenarios_ResultGrade(int score, int attendance)
+        {
+            //Arrange
+            gradingCalculator.Score = score;
+            gradingCalculator.AttendancePercentage = attendance;
+
+            //Act
+            
+
+            //Assert
+            return gradingCalculator.GetGrade();
+        }
+
     }
 }
