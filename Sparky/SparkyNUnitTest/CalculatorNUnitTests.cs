@@ -17,6 +17,7 @@ namespace Sparky
         {
             calc = new Calculator();
         }
+
         [Test]
         public void AddNumbers_InputTwoInt_GetCorrectAddition()
         {
