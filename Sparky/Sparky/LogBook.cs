@@ -10,7 +10,7 @@ namespace Sparky
     {
         void Message(string message);
     }
-    public class LogBook
+    public class LogBook : ILogBook
     {
         public void Message(string message)
         {

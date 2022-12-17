@@ -18,6 +18,7 @@ namespace Sparky
 
         public bool Deposit(int amount)
         {
+            _logBook.Message("Deposit invoked");
             balance += amount;
             return true;
         }
