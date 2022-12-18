@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Sparky
 {
     [TestFixture]
-    public class GradingCalculatorTests
+    public class GradingCalculatorXUnitTests
     {
         public GradingCalculator gradingCalculator;
 

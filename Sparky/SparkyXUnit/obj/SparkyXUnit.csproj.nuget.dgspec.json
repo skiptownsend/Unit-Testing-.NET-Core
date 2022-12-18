@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\SparkyMSTest\\SparkyMSTest.csproj": {}
+    "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\SparkyXUnit\\SparkyXUnit.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\SparkyMSTest\\SparkyMSTest.csproj": {
+    "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\SparkyXUnit\\SparkyXUnit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\SparkyMSTest\\SparkyMSTest.csproj",
-        "projectName": "SparkyMSTest",
-        "projectPath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\SparkyMSTest\\SparkyMSTest.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\SparkyXUnit\\SparkyXUnit.csproj",
+        "projectName": "SparkyXUnit",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\SparkyXUnit\\SparkyXUnit.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\SparkyMSTest\\obj\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\Tutorials\\Unit Testing in .NET Core\\Sparky\\SparkyXUnit\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -48,14 +48,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "MSTest.TestAdapter": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "MSTest.TestFramework": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.4.1, )"
@@ -64,11 +56,15 @@
               "target": "Package",
               "version": "[4.18.3, )"
             },
-            "coverlet.collector": {
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.2.0, )"
+              "version": "[2.4.5, )"
             }
           },
           "imports": [
