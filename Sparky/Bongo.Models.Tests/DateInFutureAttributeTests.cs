@@ -13,7 +13,7 @@ namespace Bongo.Models
     {
         [TestCase(100, ExpectedResult = true)]
         [TestCase(-100, ExpectedResult = false)]
-        [TestCase(0, ExpectedResult = true)]
+        [TestCase(0, ExpectedResult = false)]
         public bool DateValidator_InputExpectedDateRange_DateValidity(int addTime)
         {
             DateInFutureAttribute dateInFutureAttribute = new(() => DateTime.Now);

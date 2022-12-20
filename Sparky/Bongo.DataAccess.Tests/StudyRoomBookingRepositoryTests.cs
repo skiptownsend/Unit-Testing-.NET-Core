@@ -18,6 +18,7 @@ namespace Bongo.DataAccess.Tests
     {
         private StudyRoomBooking studyRoomBooking_One;
         private StudyRoomBooking studyRoomBooking_Two;
+        private DbContextOptions<ApplicationDbContext> options;
 
         public StudyRoomBookingRepositoryTests()
         {
@@ -42,12 +43,18 @@ namespace Bongo.DataAccess.Tests
             };
         }
 
+        [SetUp]
+        public void Setup()
+        {
+            options = new DbContextOptionsBuilder<ApplicationDbContext>()
+                .UseInMemoryDatabase(databaseName: "temp_Bongo").Options;
+        }
+
         [Test]
+        [Order(1)]
         public void SaveBooking_Booking_One_CheckValuesFromDatabase()
         {
-            //Arrange
-            var options = new DbContextOptionsBuilder<ApplicationDbContext>()
-                .UseInMemoryDatabase(databaseName: "temp_Bongo").Options;
+            //Arrange - Done in Setup
 
             //Act
             using (var context = new ApplicationDbContext(options))
@@ -69,15 +76,15 @@ namespace Bongo.DataAccess.Tests
         }
 
         [Test]
+        [Order(2)]
         public void GetAllBooking_BookingOneAndTwo_CheckbothBookingsFromDatabase()
         {
             //Arrange
             var expectedResult = new List<StudyRoomBooking> { studyRoomBooking_One, studyRoomBooking_Two };
-            var options = new DbContextOptionsBuilder<ApplicationDbContext>()
-                .UseInMemoryDatabase(databaseName: "temp_Bongo").Options;
 
             using (var context = new ApplicationDbContext(options))
             {
+                context.Database.EnsureDeleted();
                 var repository = new StudyRoomBookingRepository(context);
                 repository.Book(studyRoomBooking_One);
                 repository.Book(studyRoomBooking_Two);
