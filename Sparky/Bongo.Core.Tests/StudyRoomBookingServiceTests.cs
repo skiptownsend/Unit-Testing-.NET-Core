@@ -25,12 +25,22 @@ namespace Bongo.Core
             _bookingService = new StudyRoomBookingService(_studyRoomBookingRepoMock.Object, _studyRoomRepoMock.Object);
         }
 
-        [TestCase]
+        [Test]
         public void GetAllBooking_InvokeMethod_CheckIfRepoIsCalled()
         {
             _bookingService.GetAllBooking();
             _studyRoomBookingRepoMock.Verify(x => x.GetAll(null), Times.Once);
         }
+
+        [Test]
+        public void BookingException_NullRequest_ThrowsException()
+        {
+            var exception = Assert.Throws<ArgumentNullException>(
+                () => _bookingService.BookStudyRoom(null));
+            //Assert.AreEqual("Value cannot be null. (Parameter 'request')", exception.Message); //This is a bit too specific so use the next line instead.
+            Assert.AreEqual("request", exception.ParamName);
+        }
+
 
     }
 }
