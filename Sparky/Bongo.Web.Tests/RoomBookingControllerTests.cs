@@ -1,5 +1,7 @@
 ﻿using Bongo.Core.Services.IServices;
+using Bongo.Models.Model;
 using Bongo.Web.Controllers;
+using Microsoft.AspNetCore.Mvc;
 using Moq;
 using NUnit.Framework;
 using System;
@@ -28,6 +30,16 @@ namespace Bongo.Web
         {
             _bookingController.Index();
             _studyRoomBookingService.Verify(x => x.GetAllBooking(), Times.Once);
+        }
+
+        [Test]
+        public void BookRoomCheck_ModelStateIsValid_ReturnView()
+        {
+            _bookingController.ModelState.AddModelError("test", "test");
+            var result = _bookingController.Book(new StudyRoomBooking());
+
+            ViewResult viewResult = result as ViewResult;
+            Assert.AreEqual("Book", viewResult.ViewName);
         }
     }
 }
